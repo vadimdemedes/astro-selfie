@@ -1,6 +1,6 @@
 {
 	"name": "astro-selfie",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "Astro integration to generate page screenshots to show as Open Graph images",
 	"license": "ISC",
 	"repository": "vadimdemedes/astro-selfie",

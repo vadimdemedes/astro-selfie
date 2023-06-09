@@ -6,6 +6,8 @@ I use this extension on [my website](https://vadimdemedes.com) and my link previ
 
 <img src="example.png" width="600">
 
+Inspired by [Simon Willison's](https://simonwillison.net) website.
+
 ## Install
 
 ```console

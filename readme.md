@@ -50,7 +50,7 @@ const screenshotUrl = selfieUrl(Astro);
 ---
 <meta
 	property="og:image"
-    content={screenshotUrl.href}
+	content={screenshotUrl.href}
 />
 ```
 

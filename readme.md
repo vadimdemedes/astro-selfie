@@ -48,10 +48,8 @@ import {selfieUrl} from 'astro-selfie';
 
 const screenshotUrl = selfieUrl(Astro);
 ---
-<meta
-	property="og:image"
-	content={screenshotUrl.href}
-/>
+
+<meta property="og:image" content={screenshotUrl.href} />
 ```
 
 ### 3. Customize styles (optional)

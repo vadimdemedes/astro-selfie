@@ -1,4 +1,4 @@
-# astro-selfie
+# astro-selfie [![test](https://github.com/vadimdemedes/astro-selfie/actions/workflows/test.yml/badge.svg)](https://github.com/vadimdemedes/astro-selfie/actions/workflows/test.yml)
 
 > [Astro](https://astro.build) integration to generate page screenshots to show as Open Graph images.
 

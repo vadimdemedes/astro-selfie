@@ -2,6 +2,10 @@
 
 > [Astro](https://astro.build) integration to generate page screenshots to show as Open Graph images.
 
+I use this extension on [my website](https://vadimdemedes.com) and my link previews on Twitter look like this:
+
+![](example.png)
+
 ## Install
 
 ```console

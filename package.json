@@ -20,7 +20,8 @@
 	"scripts": {
 		"build": "tsc",
 		"dev": "tsc --watch",
-		"test": "prettier --check source && xo"
+		"test": "prettier --check source && xo",
+		"prepare": "rm -rf dist && tsc"
 	},
 	"files": [
 		"dist"

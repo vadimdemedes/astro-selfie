@@ -42,7 +42,7 @@ This integration is meant to be used locally for statically built websites for s
 
 Then, add a `<meta>` tag to each page that points to a screenshot of itself.
 
-```jsx
+```astro
 ---
 import {selfieUrl} from 'astro-selfie';
 

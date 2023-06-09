@@ -56,7 +56,7 @@ export default function selfie(): AstroIntegration {
 					await page.goto(url.href);
 
 					await page.evaluate(
-						'document.body.setAttribute("data-astro-selfie", "true")',
+						'document.body.dataset.astroSelfie = true;',
 					);
 
 					const screenshot = await page.screenshot({type: 'png'});

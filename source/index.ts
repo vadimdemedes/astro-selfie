@@ -6,7 +6,6 @@ import getPort from 'get-port';
 import serveHandler from 'serve-handler';
 import {serve} from 'micro';
 import {chromium} from 'playwright';
-import makeDir from 'make-dir';
 import type {AstroGlobal, AstroIntegration} from 'astro';
 
 export default function selfie(): AstroIntegration {
@@ -22,7 +21,7 @@ export default function selfie(): AstroIntegration {
 			// eslint-disable-next-line @typescript-eslint/naming-convention, object-shorthand
 			'astro:build:done': async ({dir, pages}) => {
 				const screenshotsDir = new URL('og', publicDir);
-				await makeDir(fileURLToPath(screenshotsDir));
+				await fs.mkdir(fileURLToPath(screenshotsDir), {recursive: true});
 
 				const port = await getPort();
 				const baseUrl = new URL(`http://localhost:${port}`);
@@ -64,7 +63,7 @@ export default function selfie(): AstroIntegration {
 						pathname === '' ? 'index.png' : `${pathname}.png`,
 					);
 
-					await makeDir(path.dirname(screenshotPath));
+					await fs.mkdir(path.dirname(screenshotPath), {recursive: true});
 					await fs.writeFile(screenshotPath, screenshot);
 				}
 

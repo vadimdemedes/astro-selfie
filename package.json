@@ -4,6 +4,7 @@
 	"description": "Astro integration to generate page screenshots to show as Open Graph images",
 	"license": "ISC",
 	"repository": "vadimdemedes/astro-selfie",
+	"types": "./dist/index.d.ts",
 	"author": {
 		"name": "Vadim Demedes",
 		"email": "vadimdemedes@hey.com",
